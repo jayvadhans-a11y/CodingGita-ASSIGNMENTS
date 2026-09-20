@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- In first iframe we did not give any special permission -->
+    <iframe src="https://www.youtube.com/embed/V5fqShLVpoI?si=Q1cYG3G9trHx_piy" width="100%" height="400" title="First iFrame"></iframe>
+    <!-- In second iframe we use fullscreen to watch video in full screen of device and gyroscope to Access device gyroscope for Motion / orientation features in Games, AR/VR -->
+    <iframe src="https://www.youtube.com/embed/V5fqShLVpoI?si=Q1cYG3G9trHx_piy" width="100%" height="400" allow="fullscreen; gyroscope" title="SEcond iFrame"></iframe>
+    <!-- in third iframe we gave itusb permission to Access USB devices for Hardware interaction in Advanced device tools -->
+    <iframe src="https://www.youtube.com/embed/V5fqShLVpoI?si=Q1cYG3G9trHx_piy" width="100%" height="400" allow="usb" title="Third iFrame"></iframe>
+    <!-- in fourth iframe we gave it a normal fullscreen permission just like iframe2 -->
+    <iframe src="https://www.youtube.com/embed/V5fqShLVpoI?si=Q1cYG3G9trHx_piy" width="100%" height="400" allow="fullscreen" title="fourth iFrame"></iframe>
+    <!-- in fifth iframe we gave it a normal fullscreen permission just like iframe2 -->
+    <iframe src="https://www.youtube.com/embed/V5fqShLVpoI?si=Q1cYG3G9trHx_piy" width="100%" height="400" allow="fullscreen" title="fifth iFrame"></iframe>
+</body>
+</html>
