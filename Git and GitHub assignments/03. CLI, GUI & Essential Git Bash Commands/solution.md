@@ -15,6 +15,12 @@
 
 **Submission:** Written answers
 
+**Answers**
+
+<img width="3060" height="4080" alt="20260921_180410" src="https://github.com/user-attachments/assets/2d823365-c89b-4ded-b693-14287e466a90" />
+
+<img width="2854" height="754" alt="20260921_180338" src="https://github.com/user-attachments/assets/9804cb3d-6801-435f-8f83-1c618054990c" />
+
 ---
 
 ### Assignment 2: Git Installation & VS Code Setup
@@ -30,6 +36,14 @@
    - VS Code terminal showing Git Bash is selected
 
 **Submission:** Written answers + Screenshots
+
+**Answers**
+
+<img width="1105" height="150" alt="day 3 s1" src="https://github.com/user-attachments/assets/39a10bf7-ed91-4d8b-bef6-26bfb5bd887a" />
+
+<img width="3060" height="1827" alt="20260921_180506" src="https://github.com/user-attachments/assets/b6a37713-14fb-443a-8e29-8d26d81e32cd" />
+
+<img width="1478" height="154" alt="day 3 s2" src="https://github.com/user-attachments/assets/d1a6eb20-4767-47df-977b-669088d80332" />
 
 ---
 
@@ -58,6 +72,12 @@
 
 **Submission:** List of commands used + short answers
 
+**Answers**
+
+<img width="4080" height="1947" alt="20260921_180551" src="https://github.com/user-attachments/assets/138dac14-f5f7-417e-b670-36c565124d85" />
+
+<img width="3922" height="897" alt="20260921_180624" src="https://github.com/user-attachments/assets/97280225-3dcf-418a-9d25-abf66301e71b" />
+
 ---
 
 ### Assignment 4: File & Folder Operations (Practical)
@@ -82,6 +102,12 @@ Perform the following in Git Bash and write the exact commands:
 - Why should we be careful while using `rm -rf`?
 
 **Submission:** Commands list + answers
+
+**Answers**
+
+<img width="4080" height="2000" alt="20260921_180656" src="https://github.com/user-attachments/assets/6cc61f7c-73a6-4301-a538-5c0f27762f77" />
+
+<img width="3932" height="2142" alt="20260921_184447" src="https://github.com/user-attachments/assets/cf092b94-7086-4075-8c29-5c708145c22e" />
 
 ---
 
@@ -115,6 +141,12 @@ Perform the following in Git Bash and write the exact commands:
 3. Write **4 key takeaways**
 
 **Submission:** Written answers
+
+**Answers**
+
+<img width="4080" height="2431" alt="20260921_180746" src="https://github.com/user-attachments/assets/7cf0ce05-a77f-4a8b-8616-40db47749946" />
+
+<img width="2966" height="2729" alt="20260921_180924" src="https://github.com/user-attachments/assets/f6f336c8-dc05-41a9-940f-62362769001c" />
 
 ---
 
