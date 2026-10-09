@@ -398,7 +398,10 @@ Output2= 25
 
 **Answer**
 ```js
-
+let totalBill = 2400
+let totalFriend = 6
+let eachPersonShare = totalBill / totalFriend
+console.log("Each person share =", eachPersonShare)
 ```
 
 10. Predict and explain the outputs:  
