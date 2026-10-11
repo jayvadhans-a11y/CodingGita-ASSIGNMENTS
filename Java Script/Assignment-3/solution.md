@@ -1113,3 +1113,361 @@ Output = False
 let input;
 console.log(input !== "0")
 ```
+
+## Part C] Relational Operator
+
+### 5. Greater Than `>`
+1. A student’s marks are 78. The passing marks are 40. Check whether the student has scored more than the passing marks.  
+
+**Answer**
+```js
+let studentMarks = 78
+let passingMarks = 40
+let isStudentPass = studentMarks > passingMarks
+console.log(isStudentPass)
+```
+
+2. Temperature today is 35°C and yesterday it was 28°C. Check if today is hotter.  
+
+**Answer**
+```js
+let todaysTemperature = 35
+let yesterdaysTemperature = 28
+let isTemperatureIncrease = todaysTemperature > yesterdaysTemperature
+console.log(isTemperatureIncrease)
+```
+
+3. Predict the output:
+   ```js
+   console.log(15 > 10);
+   console.log(10 > 15);
+   console.log(10 > 10);
+   ```
+
+**Answer**
+- Output1 = true
+- Output2 = false
+- Output3 = false
+
+4. Predict the output:
+   ```js
+   console.log("20" > 15);
+   console.log("5" > "10");
+   console.log("abc" > 10);
+   ```
+   
+**Answer**
+- Output1 = true
+- Output2 = true
+- Output3 = false
+
+5. What is the result of `null > 0` and `undefined > 0`? Explain.  
+
+**Answer**
+- result1 = false
+- result2 = false
+- explaination = if we convert null into number it become 0 means null is not greater than 0 it is equal to 0 and second if we convert undefined into number it becone NaN and NaN is neither greater than, equal or less than any number so result will always be false.
+
+6. A shop has 120 items in stock. A customer wants to buy 85 items. Write a condition using `>` to check if stock is sufficient.  
+
+**Answer**
+```js
+let itemStock = 120
+let itemWant = 85
+let isStockSufficient = itemStock > itemWant
+console.log(isStockSufficient)
+```
+
+7. Predict and explain:
+   ```js
+   console.log(true > false);
+   console.log("10" > "2");
+   console.log(NaN > 5);
+   ```
+   
+**Answer**
+- Output1 = true     (Because number value of false is 0 and true is 1.)
+- Output2 = false    (Because if we perform relational operator on two strings it will compare the unicode value of first digit if first first digit is same then it will go to next digit)
+- Output3 = false    (Because if we compare NaN with any number and with any Relational operator result will always be false)
+
+
+### 6. Less Than `<`
+1. A box can hold maximum 50 kg. Current weight is 42 kg. Check if more items can still be added.  
+
+**Answer**
+```js
+let currentWeight = 42
+let maxWeightLimit = 50
+let isItemAdded = currentWeight < maxWeightLimit
+console.log(isItemAdded)
+```
+
+2. Age of a person is 16. Minimum age required is 18. Check if the person is underage.  
+
+**Answer**
+```js
+let personAge = 16
+let minAgeRequired = 18
+let isPersonUnderage = personAge < minAgeRequired
+console.log(isPersonUnderage)
+```
+
+3. Predict the output:
+   ```js
+   console.log(8 < 12);
+   console.log(20 < 10);
+   console.log(7 < 7);
+   ```
+   
+**Answer**
+- Output1 = true
+- Output2 = false
+- Output3 = false
+
+4. Predict the output:
+   ```js
+   console.log("8" < 10);
+   console.log("20" < "3");
+   console.log("hello" < 5);
+   ```
+      
+**Answer**
+- Output1 = true
+- Output2 = true
+- Output3 = false
+
+5. What is the result of `null < 0` and `undefined < 0`? Explain.  
+
+**Answer**
+- result1 = false
+- result2 = false
+- explaination =  if we convert null into number it become 0 means null is not less than 0 it is equal to 0. Second if we convert undefined into number it becone NaN and NaN is neither greater than, equal or less than any number so result will always be false.
+
+6. A tank capacity is 500 litres. Current water level is 375 litres. Write a condition using `<` to check if it is not full.  
+
+**Answer**
+```js
+let tankCapacity = 500
+let currentWaterLevel = 375
+let isTankFull = tankCapacity < currentWaterLevel
+console.log("Is TankFull=", isTankFull)
+```
+
+7. Predict and explain:
+   ```js
+   console.log(false < true);
+   console.log("5" < "15");
+   console.log(NaN < 10);
+   ```
+      
+**Answer**
+- Output1 = true     (Because number value of false is 0 and true is 1.)
+- Output2 = false    (Because if we perform relational operator on two strings it will compare the unicode value of first digit if first first digit is same then it will go to next digit)
+- Output3 = false    (Because if we compare NaN with any number and with any Relational operator result will always be false)
+
+
+### 7. Greater Than or Equal To `>=`
+1. Minimum marks required for distinction is 75. A student scored 75. Check if the student gets distinction.  
+
+**Answer**
+```js
+let minMarksForDistinction = 75
+let studentScored = 75
+let isStudentGetDistinction = studentScored >= minMarksForDistinction
+console.log("Is student get distincton=", isStudentGetDistinction)
+```
+
+2. Ticket price is ₹300. A person has ₹300. Check if they can buy the ticket.  
+
+**Answer**
+```js
+let ticketPrice = 300
+let moneyPersonHave = 300
+let areTheyCanBuyTicket = moneyPersonHave >= ticketPrice
+console.log("Is they can buy ticket=", areTheyCanBuyTicket)
+```
+
+3. Predict the output:
+   ```js
+   console.log(25 >= 25);
+   console.log(30 >= 25);
+   console.log(20 >= 25);
+   ```
+      
+**Answer**
+- Output1 = true
+- Output2 = true
+- Output3 = false
+
+4. Predict the output:
+   ```js
+   console.log("25" >= 25);
+   console.log("10" >= "2");
+   console.log(null >= 0);
+   ```
+      
+**Answer**
+- Output1 = true
+- Output2 = false
+- Output3 = true
+
+5. What is the result of `undefined >= 0`? Explain.  
+
+**Answer**
+- Result = false
+- explaination =  if we convert undefined into number it becone NaN and NaN is neither greater than, equal or less than any number so result will always be false.
+
+6. A lift can carry maximum 8 people. Currently 8 people are inside. Write a condition using `>=` to check if the lift is full or overloaded.  
+
+**Answer**
+```js
+let maxPeopleCapacity = 8
+let currentPeopleInside = 8
+let isLiftFull = currentPeopleInside >= maxPeopleCapacity
+console.log("Is lift full or overload=", isLiftFull)
+```
+
+7. Predict and explain:
+   ```js
+   console.log(true >= 1);
+   console.log("" >= 0);
+   console.log(NaN >= NaN);
+   ```
+      
+**Answer**
+- Output1 = true     (Because the number value of true is 1)
+- Output2 = true     (Because if a string is empty its number value is 0)
+- Output3 = false    (Because NaN is not greater than, less than or equal to anymthing include itself)
+
+
+### 8. Less Than or Equal To `<=`
+1. Maximum speed limit is 60 km/h. A vehicle is travelling at 60 km/h. Check if it is within the limit.  
+
+**Answer**
+```js
+let maxSpeedLimit = 60
+let vehicleSpeed = 60
+let isItWithinLimit = vehicleSpeed <= maxSpeedLimit
+console.log("Is it within limit=", isItWithinLimit)
+```
+
+2. A student needs at least 40 marks to pass. He scored 39. Check if he has failed.  
+
+**Answer**
+```js
+let minMarks = 40
+let studentScored = 39
+let isHeFailed = studentScored <= minMarks
+console.log("Is he failed=", isHeFailed)
+```
+
+3. Predict the output:
+   ```js
+   console.log(15 <= 20);
+   console.log(20 <= 15);
+   console.log(15 <= 15);
+   ```
+      
+**Answer**
+- Output1 = true
+- Output2 = false
+- Output3 = true
+
+4. Predict the output:
+   ```js
+   console.log("15" <= 20);
+   console.log("30" <= "5");
+   console.log(null <= 0);
+   ```
+      
+**Answer**
+- Output1 = true
+- Output2 = true
+- Output3 = true
+
+5. What is the result of `undefined <= 0`? Explain.  
+
+**Answer**
+- Result = false
+- explaination =  if we convert undefined into number it becone NaN and NaN is neither greater than, equal or less than any number so result will always be false.
+
+6. A bag can hold maximum 10 books. Currently it has 10 books. Write a condition using `<=` to check if more books can be added.  
+
+**Answer**
+```js
+let bagCapacity = 10
+let currentBooksInside = 10
+let isBagFull = bagCapacity <= currentBooksInside
+console.log("Is bag full or overload=", isBagFull)
+```
+
+7. Predict and explain:
+   ```js
+   console.log(false <= 0);
+   console.log("" <= 0);
+   console.log(NaN <= 5);
+   ```
+      
+**Answer**
+- Output1 = true     (Because the number value of false is 0)
+- Output2 = true     (Because if a string is empty its number value is 0)
+- Output3 = false    (Because if we compare NaN with any number and with any Relational operator result will always be false)
+
+
+### Mixed Practice (>, <, >=, <=)
+1. Write expressions to check:
+   - Whether age `18` is greater than or equal to voting age `18`.
+      
+**Answer**
+```js
+let age = 18
+let votingAge = 18
+console.log(age >= votingAge)
+```
+
+   - Whether temperature `32` is less than `35`.
+      
+**Answer**
+```js
+let temperature = 32
+console.log(temperature < 35)
+```
+
+   - Whether score `90` is greater than `85`.
+   
+**Answer**
+```js
+let score = 90
+console.log(score > 85)
+```
+
+2. Predict the outputs:
+   ```js
+   console.log(10 > 5 && 5 < 10);
+   console.log("10" >= 10);
+   console.log(null <= undefined);
+   console.log("5" < "10" && 5 > 2);
+   ```
+      
+**Answer**
+- Output1 = true
+- Output2 = true
+- Output3 = false
+- Output4 = false
+
+3. A product costs ₹499. A customer has ₹500. Write conditions using `>=` and `<` to decide if the customer can buy it and if any change will be left.  
+
+**Answer**
+```js
+let productCost = 499
+let moneyCustomerHave = 500
+let isCustomerCanBuyIt = moneyCustomerHave >= productCost
+let isChangeLeft = productCost < moneyCustomerHave
+console.log("Is Customer can Buy it=", isCustomerCanBuyIt)
+console.log("Is Change left=", isChangeLeft)
+```
+
+4. Explain why `"10" > "2"` is `false` but `10 > 2` is `true`.
+   
+**Answer**
+- Explaination = Because if we perform relational operator on two strings it will compare the unicode value of both string first digit if first digit is same then it will go to next digit
