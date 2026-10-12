@@ -1114,7 +1114,7 @@ let input;
 console.log(input !== "0")
 ```
 
-## Part C] Relational Operator
+## Part D] Relational Operator
 
 ### 5. Greater Than `>`
 1. A student’s marks are 78. The passing marks are 40. Check whether the student has scored more than the passing marks.  
@@ -1471,3 +1471,175 @@ console.log("Is Change left=", isChangeLeft)
    
 **Answer**
 - Explaination = Because if we perform relational operator on two strings it will compare the unicode value of both string first digit if first digit is same then it will go to next digit
+
+## Part E]: Increment / Decrement Operators (`++` / `--`)
+
+### Part a:
+
+1. A counter starts at `5`. Use the increment operator to increase it by 1 and print the new value.  
+
+**Answer**
+```js
+let a=5;
+a++;
+console.log(a)
+```
+
+2. A player has `3` lives. Use the decrement operator to reduce one life and print the remaining lives. 
+
+**Answer**
+```js
+let lives=3;
+lives--;
+console.log("Remaining lives=", lives)
+```
+
+3. Start with `score = 10`. Increase the score using `++` and print it.  
+
+**Answer**
+```js
+let score=10;
+score++;
+console.log("Score=", score)
+```
+
+4. Start with `items = 8`. Decrease the items using `--` and print it.  
+
+**Answer**
+```js
+let items = 8;
+items--;
+console.log("Items=", items)
+```
+
+5. Declare `count = 0`. Increment it twice and print the final value.
+
+**Answer**
+```js
+let count = 0;
+count++;
+count++;
+console.log("Count=", count)
+```
+
+### Part b:
+
+6. Start with `x = 5`.  
+   - Create `y = x++`  
+   - Print both `x` and `y`.  
+   Explain why the values are different.
+   
+**Answer**
+```js
+let x = 5;
+let y= x++;
+console.log(x)
+console.log(y)
+```
+- Explaination=it is a edge case in python. It is known as postfix increament here we first give the value of x to y and then increament x by 1.
+
+7. Start with `a = 5`.  
+   - Create `b = ++a`  
+   - Print both `a` and `b`.  
+   Explain the difference from the previous question.
+   
+**Answer**
+```js
+let a = 5;
+let b= ++a;
+console.log(a)
+console.log(b)
+```
+- Explaination=it is a edge case in python. It is known as prefix increament here we first increament a by 1 and then give it to b.
+
+8. Start with `lives = 3`.  
+   - Use post-decrement (`lives--`) and store the result in `previousLives`.  
+   - Print both variables.
+   
+**Answer**
+```js
+let lives = 3;
+let previousLives= lives--;
+console.log(lives)
+console.log(previousLives)
+```
+
+9. Start with `attempts = 0`.  
+   - Use pre-increment (`++attempts`) and store the result in `currentAttempts`.  
+   - Print both variables.
+
+**Answer**
+```js
+let attempts = 0;
+let currentAttempts= ++attempts;
+console.log(attempts)
+console.log(currentAttempts)
+```
+
+10. Start with `points = 100`.  
+    - Increase it using `++`  
+    - Then decrease it using `--`  
+    - Print the final value.
+
+**Answer**
+```js
+let points = 100;
+points++;
+points--;
+console.log(points)
+```
+
+### Part c:
+
+11. Predict the output:
+    ```js
+    let x = 10;
+    let y = x++;
+    let z = ++x;
+    console.log(x, y, z);
+    ```
+
+    **Answer**
+    - Output = 12 10 12
+
+12. Predict the output:
+    ```js
+    let a = 5;
+    let b = a-- + ++a;
+    console.log(a, b);
+    ```
+
+    **Answer**
+    - Output = 5 10
+
+13. Predict the output:
+    ```js
+    let m = 7;
+    let n = --m + m++;
+    console.log(m, n);
+    ```
+
+    **Answer**
+    - Output = 7 12
+
+14. Predict the output:
+    ```js
+    let p = 3;
+    let q = p++ + ++p + p;
+    console.log(p, q);
+    ```
+
+    **Answer**
+    - Output = 5 13
+
+15. Predict the output:
+    ```js
+    let val = 0;
+    val = val++ + ++val;
+    console.log(val);
+    ```
+
+    **Answer**
+    - Output = 2
+
+---
