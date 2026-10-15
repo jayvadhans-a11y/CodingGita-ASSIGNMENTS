@@ -1986,3 +1986,521 @@ console.log("is it can be edited:", isItCanBeEdited)
 - Output= false
 
 ***
+
+---
+
+## Part G]: `typeof` Operator
+----
+### Part a: 
+
+1. Declare a variable `name = "Rahul"` and print its type using `typeof`.  
+
+**Answer**
+```js
+let name = "Rahul"
+console.log(typeof(name))
+```
+
+2. Declare a variable `age = 25` and print its type.  
+
+**Answer**
+```js
+let age = 25
+console.log(typeof(age))
+```
+
+3. Declare a variable `isStudent = true` and print its type.  
+
+**Answer**
+```js
+let isStudent = true
+console.log(typeof(isStudent))
+```
+
+4. Declare a variable `city` (without assigning a value) and print its type.  
+
+**Answer**
+```js
+let city;
+console.log(typeof(city))
+```
+
+5. Print the type of the value `null`.
+
+**Answer**
+```js
+console.log(typeof(null))
+```
+
+
+### Part b:
+
+6. Predict the output:
+   ```js
+   console.log(typeof 42);
+   console.log(typeof "Hello");
+   console.log(typeof true);
+   console.log(typeof undefined);
+   ```
+
+   **Answer**
+   - Output1 = number
+   - Output2 = string
+   - Output3 = boolean
+   - Output4 = undefined
+
+7. Predict the output:
+   ```js
+   console.log(typeof null);
+   console.log(typeof {});
+   console.log(typeof []);
+   ```
+   
+   **Answer**
+   - Output1 = object
+   - Output2 = object
+   - Output3 = object
+
+8. Predict the output:
+   ```js
+   console.log(typeof NaN);
+   console.log(typeof Infinity);
+   console.log(typeof function(){});
+   ```
+
+   **Answer**
+   - Output1 = number
+   - Output2 = number
+   - Output3 = function
+
+9. Create three variables:
+   - `price = 99.99`
+   - `message = "Welcome"`
+   - `isActive = false`  
+   Print the type of each variable with a clear message.
+
+   **Answer**
+   ```js
+   let price = 99.99
+   let message = "Welcome"
+   let isActive = false
+   console.log(typeof(price))      // it is a number.
+   console.log(typeof(message))    // it is a string.
+   console.log(typeof(isActive))   // it is a boolean.
+   ```
+
+10. Predict the output:
+    ```js
+    let value = null;
+    console.log(typeof value);
+    console.log(typeof value === "object");
+    ```
+
+   **Answer**
+   - Output1 = object
+   - Output2 = true
+
+### Part c:
+
+11. Predict the output:
+    ```js
+    console.log(typeof typeof 100);
+    console.log(typeof typeof "Hi");
+    console.log(typeof typeof true);
+    ```
+
+   **Answer**
+   - Output1 = string
+   - Output2 = string
+   - Output3 = string
+
+12. Predict the output:
+    ```js
+    let a = 10;
+    let b = "10";
+    console.log(typeof a === typeof b);
+    console.log(typeof a == typeof b);
+    ```
+
+   **Answer**
+   - Output1 = false
+   - Output2 = false
+
+13. Predict the output:
+    ```js
+    console.log(typeof null === "object");
+    console.log(typeof [] === "object");
+    console.log(typeof {} === "object");
+    ```
+
+   **Answer**
+   - Output1 = true
+   - Output2 = true
+   - Output3 = true
+
+14. Predict the output:
+    ```js
+    let x;
+    console.log(typeof x);
+    x = null;
+    console.log(typeof x);
+    x = 0;
+    console.log(typeof x);
+    ```
+
+   **Answer**
+   - Output1 = undefined
+   - Output2 = object
+   - Output3 = number
+
+15. Predict the output:
+    ```js
+    console.log(typeof NaN === "number");
+    console.log(typeof Infinity === "number");
+    console.log(typeof (1 / 0));
+    ```
+
+   **Answer**
+   - Output1 = true
+   - Output2 = true
+   - Output3 = number
+
+---
+
+## Part H]: Type Coercion
+
+### Part a:
+
+1. Convert the string `"25"` into a number using `Number()` and add `10` to it. Print the result.  
+
+**Answer**
+```js
+let string = "25"
+string = Number(string)
+string += 10
+console.log(string)
+```
+
+2. Convert the number `100` into a string using `String()` and join it with `" rupees"`. Print the result.  
+
+**Answer**
+```js
+let number = 100
+number = String(number)
+number += " rupees"
+console.log(number)
+```
+
+3. Convert the value `0` into a boolean using `Boolean()` and print it.  
+
+**Answer**
+```js
+let value = 0
+value = Boolean(value)
+console.log(value)
+```
+
+4. Convert the value `"Hello"` into a boolean and print it.  
+
+**Answer**
+```js
+let value = "Hello"
+value = Boolean(value)
+console.log(value)
+```
+
+5. Use the unary `+` operator to convert `"50"` into a number and multiply it by `2`.
+
+**Answer**
+```js
+let value = +"50"*2
+console.log(value)
+```
+
+
+### Part b:
+
+6. Predict the output:
+   ```js
+   console.log("10" - 5);
+   console.log("10" + 5);
+   console.log("10" * 2);
+   console.log("10" / 2);
+   ```
+
+   **Answer**
+   - Output1 = 5
+   - Output2 = 105
+   - Output3 = 20
+   - Output4 = 5
+
+7. Predict the output:
+   ```js
+   console.log("5" - "2");
+   console.log("5" + "2");
+   console.log("5" * "2");
+   console.log("5" / "2");
+   ```
+
+   **Answer**
+   - Output1 = 3
+   - Output2 = 52
+   - Output3 = 10
+   - Output4 = 2.5
+
+8. Predict the output:
+   ```js
+   console.log(Number("123"));
+   console.log(Number("123abc"));
+   console.log(Number(true));
+   console.log(Number(false));
+   console.log(Number(null));
+   console.log(Number(undefined));
+   ```
+
+   **Answer**
+   - Output1 = 123
+   - Output2 = NaN
+   - Output3 = 1
+   - Output4 = 0
+   - Output5 = 0
+   - Output6 = NaN
+
+9. Predict the output:
+   ```js
+   console.log(Boolean(0));
+   console.log(Boolean(""));
+   console.log(Boolean("0"));
+   console.log(Boolean([]));
+   console.log(Boolean({}));
+   console.log(Boolean(null));
+   ```
+
+   **Answer**
+   - Output1 = false
+   - Output2 = false
+   - Output3 = true
+   - Output4 = true
+   - Output5 = true
+   - Output6 = false
+
+10. Predict the output:
+    ```js
+    console.log(String(100));
+    console.log(String(true));
+    console.log(String(null));
+    console.log(String(undefined));
+    console.log(100 + "");
+    ```
+
+   **Answer**
+   - Output1 = 100
+   - Output2 = true
+   - Output3 = null
+   - Output4 = undefined
+   - Output5 = 100 
+
+### Part c:
+
+11. Predict the output:
+    ```js
+    console.log("5" + 3 + 2);
+    console.log(5 + 3 + "2");
+    console.log("5" - 3 + 2);
+    console.log(5 - "3" + "2");
+    ```
+
+   **Answer**
+   - Output1 = 532
+   - Output2 = 82
+   - Output3 = 4
+   - Output4 = 22
+
+12. Predict the output:
+    ```js
+    console.log(true + true);
+    console.log(true + false);
+    console.log(true + "false");
+    console.log(false + "true");
+    ```
+
+   **Answer**
+   - Output1 = 2
+   - Output2 = 1
+   - Output3 = truefalse
+   - Output4 = falsetrue
+
+13. Predict the output:
+    ```js
+    console.log(null + 5);
+    console.log(undefined + 5);
+    console.log(null + "5");
+    console.log(undefined + "5");
+    ```
+
+   **Answer**
+   - Output1 = 5
+   - Output2 = NaN
+   - Output3 = null5
+   - Output4 = undefined5
+
+14. Predict the output:
+    ```js
+    console.log([] + []);
+    console.log([] + {});
+    console.log({} + []);
+    console.log({} + {});
+    ```
+
+   **Answer**
+   - Output1 = 
+   - Output2 = [object object]
+   - Output3 = [object Object]
+   - Output4 = [object Object][object Object]
+
+15. Predict the output:
+    ```js
+    let a = "10";
+    let b = 5;
+    let c = a + b;
+    let d = a - b;
+    let e = +a + b;
+    console.log(c, typeof c);
+    console.log(d, typeof d);
+    console.log(e, typeof e);
+    ```
+
+   **Answer**
+   - Output1 = 105 string
+   - Output2 = 5 number
+   - Output3 = 15 number
+
+16. Predict the output:
+    ```js
+    console.log(!!"Hello");
+    console.log(!!"");
+    console.log(!!0);
+    console.log(!!1);
+    console.log(!!null);
+    console.log(!!undefined);
+    ```
+
+   **Answer**
+   - Output1 = true
+   - Output2 = false
+   - Output3 = false
+   - Output4 = true
+   - Output5 = false
+   - Output6 = false
+
+17. Predict the output:
+    ```js
+    console.log(Number(""));
+    console.log(Number(" "));
+    console.log(Number("0"));
+    console.log(Number("  25  "));
+    console.log(Number("25px"));
+    ```
+
+   **Answer**
+   - Output1 = 0
+   - Output2 = 0
+   - Output3 = 0
+   - Output4 = 25
+   - Output5 = NaN
+
+18. Predict the output:
+    ```js
+    let val1 = "5";
+    let val2 = 2;
+    console.log(val1 + val2);
+    console.log(+val1 + val2);
+    console.log(val1 - val2);
+    console.log(val1 * val2);
+    console.log(val1 / val2);
+    ```
+
+   **Answer**
+   - Output1 = 52
+   - Output2 = 7
+   - Output3 = 3
+   - Output4 = 10
+   - Output5 = 2.5
+
+---
+
+# Bonus Mixed Practice Questions:
+
+19. Predict the output:
+    ```js
+    let count = 5;
+    console.log(typeof count++);
+    console.log(count);
+    console.log(typeof ++count);
+    console.log(count);
+    ```
+
+   **Answer**
+   - Output1 = number
+   - Output2 = 6
+   - Output3 = number
+   - Output4 = 7
+
+20. Predict the output:
+    ```js
+    let x = "10";
+    let y = ++x;
+    console.log(x, y, typeof x, typeof y);
+    ```
+
+   **Answer**
+   - Output = 11 11 number number
+
+21. Predict the output:
+    ```js
+    let a = "5";
+    let b = a++;
+    console.log(a, b, typeof a, typeof b);
+    ```
+
+   **Answer**
+   - Output = 6 5 number number
+
+22. Predict the output:
+    ```js
+    console.log(typeof (1 + "2"));
+    console.log(typeof (1 - "2"));
+    console.log(typeof (1 * "2"));
+    console.log(typeof (1 / "2"));
+    ```
+
+   **Answer**
+   - Output1 = string
+   - Output2 = number
+   - Output3 = number
+   - Output4 = number
+
+23. Predict the output:
+    ```js
+    let val = null;
+    console.log(typeof val);
+    console.log(val + 1);
+    console.log(val - 1);
+    console.log(val * 1);
+    console.log(Boolean(val));
+    ```
+
+   **Answer**
+   - Output1 = object
+   - Output2 = 1
+   - Output3 = -1
+   - Output4 = 0
+   - Output5 = false
+
+---
+
+**Remember**  
+- Focus on understanding **when** and **why** JavaScript converts types automatically.  
+- Pay special attention to the difference between `+` (concatenation) and other arithmetic operators.  
+- Remember: `typeof null` is a famous historical quirk.  
+- Practice predicting outputs before running the code — this builds strong intuition.
